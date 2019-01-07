@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6", "es7", "dom"],
+    "sourceMap": true,
+    "outDir": "./test/",
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@middlewares/*": ["middlewares/*"],
+      "@models/*": ["db/models/*"],
+      "@routes/*": ["routes/*"],
+      "@src/*": ["*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

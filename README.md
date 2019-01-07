@@ -1,1 +1,1 @@
-node-server-ts-starter
+oilnow-admin-server
